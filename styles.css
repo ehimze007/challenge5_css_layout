@@ -9,7 +9,6 @@
 }
 body {
   color: #00b39b;
-  /* padding: 0 10%; */
 }
 
 .navBar {
@@ -23,7 +22,6 @@ body {
   align-items: center;
   color: #00b39b;
   box-shadow: 0 0.1px 3px #ffffff;
-  margin: 0 10%;
 }
 
 .navLogo {
@@ -180,13 +178,13 @@ body {
 .sectionTwo > div > div {
   padding: 20px;
   min-height: 200px;
-  margin: 10px;
+  margin: 5px 10px;
   background-color: #ffffff;
   border-radius: 5%;
 }
 /**************************************************************************************************/
 .sectionThree {
-  margin: 10% 10% 0 10%;
+  margin: 1% 10% 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,9 +193,10 @@ body {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: auto;
+  margin: 20px auto;
   text-align: center;
 }
+
 .figureContainer {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
@@ -351,15 +350,22 @@ footer {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .navBar {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+  }
   .navMenu {
     position: fixed;
     right: -100%;
-    top: 70px;
+    top: 50px;
     gap: 0;
     flex-direction: column;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    background-color: #ffffff;
   }
   .navItem {
     margin: 16px 0;
@@ -387,5 +393,10 @@ footer {
   }
   .sectionTwo > Div {
     width: auto;
+  }
+
+  .figureContainer {
+    display: flex;
+    flex-direction: column;
   }
 }
